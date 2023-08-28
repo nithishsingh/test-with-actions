@@ -33,6 +33,7 @@ jobs:
 
   on_merge:
     name: On merge
+    
     needs: get_current_step
 
     # We will only run this action when:
@@ -61,3 +62,4 @@ jobs:
     from_step: 5
     to_step: X
     branch_name: ci
+
